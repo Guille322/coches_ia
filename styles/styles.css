@@ -1,0 +1,126 @@
+:root {
+    --blancoLineas: white;
+    --carretera: #a7a7a7;
+    --anchoAparcamiento: 100px;
+    --altoAparcamiento: 100px;
+    --marginAparcamientoDiagonal: -80px;
+    --colorAparcamientoEspecial: #ba9e36;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* user-drag: none; */
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: var(--carretera);
+}
+
+#divPuntos {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    height: 100vh;
+}
+/*
+.divPuntuacion {
+}
+*/
+#areaJuego {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+}
+
+.divCoche {
+    position: absolute;
+    z-index: 12;
+    transition: 0.5s;
+    /*transition: all 0.12s ease-in-out;    jjbb */
+}
+
+.divCocheSinAnimacion {
+    transition: none !important;
+}
+
+.coche {
+    width: 92px;
+    height: 92px;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+.divCoche img {
+    position: relative;
+}
+
+.vacio {
+    background-color: transparent;
+    width: var(--anchoAparcamiento);
+    height: var(--altoAparcamiento);
+}
+
+.aparcamiento {
+    background-color: transparent;
+    width: var(--anchoAparcamiento);
+    height: var(--altoAparcamiento);
+    border-style: dashed;
+    border-color: var(--blancoLineas);
+    border-width: 4px;
+    text-align: center;
+}
+
+.aparcamientoExplosion {
+    background-image: url('../imagenes/explosion.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90px;
+}
+
+.minusvalido {
+    background-image: url('../imagenes/minusvalido.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+}
+
+.dinero {
+    background-image: url('../imagenes/dinero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+}
+
+.aparcamientoEnLineaDiagonal1 {
+    transform: rotate(45deg);
+}
+
+.aparcamientoEnLineaDiagonal2 {
+    transform: rotate(-45deg);
+}
+
+.aparcamientoHorizontal {
+    width: var(--altoAparcamiento);
+    height: var(--anchoAparcamiento);
+}
+
+.aparcamientoEspecial {
+    background-color: var(--colorAparcamientoEspecial);
+}
+
+.planta {
+    background-image: url('../imagenes/planta.png');
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

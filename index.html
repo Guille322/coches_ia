@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/redNeuronal/mejoresCoches.js"></script>
+    <script src="scripts/funciones.js"></script>
+    <script src="scripts/redNeuronal/funcionesDeActivacion.js"></script>
+    <script src="scripts/redNeuronal/neurona.js"></script>
+    <script src="scripts/redNeuronal/capa.js"></script>
+    <script src="scripts/redNeuronal/redNeuronal.js"></script>
+    <script src="scripts/aparcarCoches.js"></script>
+    <script src="scripts/coche.js"></script>
+</header>
+<body>
+
+
+    <div id="areaJuego">
+        
+        <div class="aparcamiento aparcamientoEspecial"></div>
+        <div class="aparcamiento minusvalido">
+            <img src="imagenes/coche1.png" class="coche">
+        </div>
+        <div class="aparcamiento"></div>
+        <div class="aparcamiento minusvalido">
+            <img src="imagenes/coche1.png" class="coche">
+        </div>
+        <div class="aparcamiento aparcamientoHorizontal"></div>
+        <div class="aparcamiento minusvalido aparcamientoHorizontal"></div>
+        <div class="planta"></div>
+        <div class="planta"></div>
+        <div class="planta"></div>
+
+    </div>
+
+    <div id="divPuntos">
+        <h2 id="tituloGeneracion"></h2>
+        <button id="btnSigGen" >SIGUIENTE GENERACIÓN</button>
+        <div id="divPuntuaciones">
+
+        </div>
+    </div>
+
+    <script>
+
+
+        const aparcarCoches = new AparcarCoches();
+
+
+        aparcarCoches.addCoches(COCHES_POR_GENERACION);
+        
+
+        /*for (let i = 0; i < mejoresRedes["redes"].length; i++) {
+            aparcarCoches.coches[i].redNeuronal = getMejorRedCocheGuardado(mejoresRedes["redes"][i]);
+        }*/
+
+        aparcarCoches.bucleGeneracional();
+
+
+        
+    </script>
+</body>
+</html>

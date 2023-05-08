@@ -17,7 +17,7 @@
 
 
 - El coche obtiene +50 de dinero si pasa por aquí.
-
+<img src="/imagenes/dinero.png" alt="dinero" style="max-width: 50%;width: 200px;">
 ![dinero](/imagenes/dinero.png) 
 
 

@@ -15,4 +15,4 @@ Un juego en el que aparecen muchos coches en un parking, los coches aparecen tod
 ![plaza de minusvalido](/imagenes/minusvalido.jpg) Si el coche pasa por una casilla que sea esto, le quita 25 de dinero por posicionarse en este sitio.
 
 ![planta](/imagenes/planta.png) Una planta que molesta el paso y impide a un coche ir a esta casilla aunque quisiera.
-<img src="/imagenes/planta.png" with="200px">
+<img src="/imagenes/planta.png" style="max-width: 200px;">

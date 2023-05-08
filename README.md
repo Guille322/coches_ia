@@ -19,7 +19,7 @@
 
 
 - Si el coche pasa por una casilla que sea esto, le quita 25 de dinero por posicionarse en este sitio.
-<img src="(/imagenes/minusvalido.jpg" alt="plaza de minusvalido" style="max-width: 50%;width: 200px;">
+<img src="/imagenes/minusvalido.jpg" alt="plaza de minusvalido" style="max-width: 50%;width: 200px;">
 
 - Una planta que molesta el paso y impide a un coche ir a esta casilla aunque quisiera.
-<img src="(/imagenes/planta.png" alt="planta" style="max-width: 50%;width: 200px;">
+<img src="/imagenes/planta.png" alt="planta" style="max-width: 50%;width: 200px;">

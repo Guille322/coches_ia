@@ -12,20 +12,14 @@
 
 
 - Representa un coche aparcado, si el coche se mueve a donde haya uno explota y el coche muere.
-
-![coche aparcado](/imagenes/coche2.png)
-
+<img src="/imagenes/coche2.png" alt="coche aparcado" style="max-width: 50%;width: 200px;">
 
 - El coche obtiene +50 de dinero si pasa por aquí.
 <img src="/imagenes/dinero.png" alt="dinero" style="max-width: 50%;width: 200px;">
-![dinero](/imagenes/dinero.png) 
 
 
 - Si el coche pasa por una casilla que sea esto, le quita 25 de dinero por posicionarse en este sitio.
-
-![plaza de minusvalido](/imagenes/minusvalido.jpg) 
-
+<img src="(/imagenes/minusvalido.jpg" alt="plaza de minusvalido" style="max-width: 50%;width: 200px;">
 
 - Una planta que molesta el paso y impide a un coche ir a esta casilla aunque quisiera.
-
-![planta](/imagenes/planta.png) 
+<img src="(/imagenes/planta.png" alt="planta" style="max-width: 50%;width: 200px;">
